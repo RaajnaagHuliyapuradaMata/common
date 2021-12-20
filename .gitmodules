@@ -1,0 +1,3 @@
+[submodule "LATEST/ref/Compiler_Abstraction_GNU"]
+	path = LATEST/ref/Compiler_Abstraction_GNU
+	url = git@github.com:NAAGRAAJ-HM/Compiler_Abstraction_GNU.git
