@@ -9,8 +9,9 @@
 /*****************************************************/
 #include "Std_Types.h"
 
-#include "EcuM_Client.h"
-#include "SchM_Client.h"
+#include "infEcuMClient.h"
+#include "infDcmClient.h"
+#include "infSchMClient.h"
 
 /*****************************************************/
 /* #DEFINES                                          */
@@ -25,6 +26,7 @@
 /*****************************************************/
 class abstract_module:
       public infEcuMClient
+   ,  public infDcmClient
    ,  public infSchMClient
 {
    public:
@@ -33,6 +35,7 @@ class abstract_module:
 /*****************************************************/
       virtual void InitFunction   (void) = 0;
       virtual void DeInitFunction (void) = 0;
+      virtual void GetVersionInfo (void) = 0;
       virtual void MainFunction   (void) = 0;
 };
 
