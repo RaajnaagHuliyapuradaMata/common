@@ -1,6 +1,6 @@
 #pragma once
 /******************************************************************************/
-/* File   : Std_Version.h                                                     */
+/* File   : Platform_Types.h                                                  */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
@@ -11,8 +11,6 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define STD_AR_RELEASE_MAJOR_VERSION                                           4
-#define STD_AR_RELEASE_MINOR_VERSION                                           3
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -21,14 +19,17 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef struct{
-   uint16 VendorID;
-   uint16 ModuleID;
-   uint8  InstanceID;
-   uint8  SwMajorVersion;
-   uint8  SwMinorVersion;
-   uint8  SwPatchVersion;
-}Std_VersionInfoType;
+typedef   signed char  sint8;  //TBD
+typedef   signed short sint16; //TBD
+typedef   signed long  sint32; //TBD
+typedef unsigned char  uint8;  //TBD
+typedef unsigned short uint16; //TBD
+typedef unsigned long  uint32; //TBD
+
+typedef enum{
+      FALSE = 0
+   ,  TRUE
+}boolean;
 
 /******************************************************************************/
 /* CONSTS                                                                     */

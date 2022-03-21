@@ -8,6 +8,7 @@
 /* #INCLUDES                                         */
 /*****************************************************/
 #include "Std_Types.h"
+#include "Std_Version.h"
 
 #include "infEcuMClient.h"
 #include "infDcmClient.h"
