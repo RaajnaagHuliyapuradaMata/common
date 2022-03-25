@@ -1,13 +1,18 @@
 #pragma once
 /******************************************************************************/
-/* File   : CfgModule.h                                                       */
+/* File   : module.hpp                                                        */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "Std_Types.h"
+#include "Std_Types.hpp"
+
+#include "infEcuMClient.hpp"
+#include "infDcmClient.hpp"
+#include "infDetClient.hpp"
+#include "infSchMClient.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -20,9 +25,11 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-class CfgModule_TypeAbstract{
-   public:
-      Std_TypeVersionInfo VersionInfo;
+class abstract_module:
+      public infEcuMClient
+   ,  public infDcmClient
+   ,  public infSchMClient
+{
 };
 
 /******************************************************************************/
