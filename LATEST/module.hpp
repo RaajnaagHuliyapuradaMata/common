@@ -26,10 +26,13 @@
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
 class abstract_module:
-      public infEcuMClient
-   ,  public infDcmClient
+      public infDcmClient
+   ,  public infEcuMClient
    ,  public infSchMClient
 {
+   public:
+      abstract_module(Std_TypeVersionInfo lVersionInfo) : infDcmClient(lVersionInfo){
+      }
 };
 
 /******************************************************************************/
