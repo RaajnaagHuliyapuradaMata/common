@@ -13,8 +13,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define STD_AR_RELEASE_MAJOR_VERSION                                           4
-#define STD_AR_RELEASE_MINOR_VERSION                                           3
+#define STD_AR_RELEASE_VERSION_MAJOR                                           4
+#define STD_AR_RELEASE_VERSION_MINOR                                           3
 #define STD_LOW                                                                0
 #define STD_HIGH                                                               1
 #define STD_IDLE                                                               0
@@ -35,12 +35,14 @@ typedef enum{
 }Std_TypeReturn;
 
 typedef struct{
-   uint16 VendorID;
-   uint16 ModuleID;
-   uint8  InstanceID;
-   uint8  SwMajorVersion;
-   uint8  SwMinorVersion;
-   uint8  SwPatchVersion;
+   uint8 ArVersionMajor;
+   uint8 ArVersionMinor;
+   uint8 IDVendor;
+   uint8 IDModule;
+   uint8 IDInstance;
+   uint8 SwVersionMajor;
+   uint8 SwVersionMinor;
+   uint8 SwVersionPatch;
 }Std_TypeVersionInfo;
 
 /******************************************************************************/
