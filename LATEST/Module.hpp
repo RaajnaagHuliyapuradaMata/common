@@ -31,7 +31,12 @@ class abstract_module:
    ,  public infSchMClient
 {
    public:
-      abstract_module(Std_TypeVersionInfo lVersionInfo) : infDcmClient(lVersionInfo){
+      using infDcmClient::infDcmClient;
+
+      abstract_module(
+         Std_TypeVersionInfo lVersionInfo
+      )
+      : infDcmClient(lVersionInfo){
       }
 };
 
