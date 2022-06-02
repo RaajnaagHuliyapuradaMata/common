@@ -37,6 +37,10 @@ typedef enum{
 }Std_TypeReturn;
 
 typedef struct{
+#if(STD_ON == _ReSIM)
+// char strModuleName[6];
+#else
+#endif
    uint8 ArVersionMajor;
    uint8 ArVersionMinor;
    uint8 IDVendor;
