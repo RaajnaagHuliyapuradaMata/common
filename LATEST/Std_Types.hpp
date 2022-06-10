@@ -9,11 +9,6 @@
 /******************************************************************************/
 #include "Platform_Types.hpp"
 #include "Compiler.hpp"
-#if(STD_ON == _ReSIM)
-#include <string>
-using namespace std;
-#else
-#endif
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
@@ -42,10 +37,6 @@ typedef enum{
 }Std_TypeReturn;
 
 typedef struct{
-#if(STD_ON == _ReSIM)
-   string strModuleName;
-#else
-#endif
    uint8 ArVersionMajor;
    uint8 ArVersionMinor;
    uint8 IDVendor;
