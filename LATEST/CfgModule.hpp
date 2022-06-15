@@ -22,6 +22,10 @@
 /******************************************************************************/
 class CfgModule_TypeAbstract{
    public:
+      bool                bDevErrorDetect;    ERROR
+      bool                bVersionInfoApi;    ERROR
+      bool                bZeroCostOperation; ERROR
+      bool                bMetaDataSupport;   ERROR
       Std_TypeVersionInfo VersionInfo;
 };
 
