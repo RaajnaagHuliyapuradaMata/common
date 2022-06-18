@@ -12,6 +12,8 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define DevErrorDetect                                                    STD_ON
+#define VersionInfoApi                                                    STD_ON //TBD: Madatory?
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -22,10 +24,10 @@
 /******************************************************************************/
 class CfgModule_TypeAbstract{
    public:
-      bool                bDevErrorDetect;    ERROR
-      bool                bVersionInfoApi;    ERROR
-      bool                bZeroCostOperation; ERROR
-      bool                bMetaDataSupport;   ERROR
+      bool                bDevErrorDetect;
+      bool                bVersionInfoApi;
+//    bool                bZeroCostOperation; TBD: Applicable to PduR general configuration parameters only
+//    bool                bMetaDataSupport;   TBD: FFD
       Std_TypeVersionInfo VersionInfo;
 };
 
