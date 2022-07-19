@@ -37,14 +37,14 @@ typedef enum{
 }Std_TypeReturn;
 
 typedef struct{
-   uint8 ArVersionMajor;
-   uint8 ArVersionMinor;
-   uint8 IDVendor;
-   uint8 IDModule;
-   uint8 IDInstance;
-   uint8 SwVersionMajor;
-   uint8 SwVersionMinor;
-   uint8 SwVersionPatch;
+   uint8 u8ArVersionMajor;
+   uint8 u8ArVersionMinor;
+   uint8 u8IDVendor;
+   uint8 u8IDModule;
+   uint8 u8IDInstance;
+   uint8 u8SwVersionMajor;
+   uint8 u8SwVersionMinor;
+   uint8 u8SwVersionPatch;
 }Std_TypeVersionInfo;
 
 /******************************************************************************/
