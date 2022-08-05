@@ -15,8 +15,8 @@
 #define AUTOMATIC
 #define TYPEDEF
 #define NULL_PTR                                                     ((void *)0)
-#define INLINE                                                            inline
-#define LOCAL_INLINE                                               static inline
+#define ISERVICENMCALLINE                                                            inline
+#define LOCAL_ISERVICENMCALLINE                                               static inline
 
 /******************************************************************************/
 /* MACROS                                                                     */
