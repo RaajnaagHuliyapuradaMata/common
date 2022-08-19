@@ -12,6 +12,10 @@
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
+#define STD_OFF                                                                0
+#define STD_ON                                                                 1
+#define _ReSIM                                                            STD_ON
+
 #define STD_REAL_FIX_POINT_16 (1)
 #define STD_REAL_FIX_POINT_32 (2)
 #define STD_REAL_FLOAT_32     (3)
