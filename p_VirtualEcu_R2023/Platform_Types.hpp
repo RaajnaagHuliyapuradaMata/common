@@ -1,26 +1,16 @@
 #pragma once
 /******************************************************************************/
-/* File   : Std_Types.hpp                                                     */
+/* File   : Platform_Types.hpp                                                */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "Platform_Types.hpp"
-#include "Compiler.hpp"
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define STD_AR_RELEASE_VERSION_MAJOR                                           4
-#define STD_AR_RELEASE_VERSION_MINOR                                           3
-#define STD_LOW                                                                0
-#define STD_HIGH                                                               1
-#define STD_IDLE                                                               0
-#define STD_ACTIVE                                                             1
-#define STD_OFF                                                                0
-#define STD_ON                                                                 1
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -29,21 +19,17 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef enum{
-      E_OK     = 0
-   ,  E_NOT_OK = 1
-}Std_TypeReturn;
+typedef   signed char  sint8;  //TBD
+typedef   signed short sint16; //TBD
+typedef   signed long  sint32; //TBD
+typedef unsigned char  uint8;  //TBD
+typedef unsigned short uint16; //TBD
+typedef unsigned long  uint32; //TBD
 
-typedef struct{
-   uint8 u8ArVersionMajor;
-   uint8 u8ArVersionMinor;
-   uint8 u8IDVendor;
-   uint8 u8IDModule;
-   uint8 u8IDInstance;
-   uint8 u8SwVersionMajor;
-   uint8 u8SwVersionMinor;
-   uint8 u8SwVersionPatch;
-}Std_TypeVersionInfo;
+typedef enum{
+      FALSE = 0
+   ,  TRUE
+}boolean;
 
 /******************************************************************************/
 /* CONSTS                                                                     */

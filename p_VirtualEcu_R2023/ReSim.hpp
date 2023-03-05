@@ -1,26 +1,23 @@
 #pragma once
 /******************************************************************************/
-/* File   : Std_Types.hpp                                                     */
+/* File   : ReSim.hpp                                                         */
 /* Author : NAGARAJA HM (c) since 1982. All rights reserved.                  */
 /******************************************************************************/
+
+#define _ReSIM                                                            STD_ON
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "Platform_Types.hpp"
-#include "Compiler.hpp"
+#if(STD_ON == _ReSIM)
+#include <iostream>
+using namespace std;
+#else
+#endif
 
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define STD_AR_RELEASE_VERSION_MAJOR                                           4
-#define STD_AR_RELEASE_VERSION_MINOR                                           3
-#define STD_LOW                                                                0
-#define STD_HIGH                                                               1
-#define STD_IDLE                                                               0
-#define STD_ACTIVE                                                             1
-#define STD_OFF                                                                0
-#define STD_ON                                                                 1
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -29,21 +26,6 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef enum{
-      E_OK     = 0
-   ,  E_NOT_OK = 1
-}Std_TypeReturn;
-
-typedef struct{
-   uint8 u8ArVersionMajor;
-   uint8 u8ArVersionMinor;
-   uint8 u8IDVendor;
-   uint8 u8IDModule;
-   uint8 u8IDInstance;
-   uint8 u8SwVersionMajor;
-   uint8 u8SwVersionMinor;
-   uint8 u8SwVersionPatch;
-}Std_TypeVersionInfo;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
