@@ -18,7 +18,6 @@
 /* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
-/* git@bitbucket.org:raajnaag-huliyapurada-mata/<module_name>.git             */
 /* git@github.com:RaajnaagHuliyapuradaMata/<module_name>.git                  */
 /*                                                                            */
 /******************************************************************************/
@@ -47,16 +46,12 @@ Version  : 2015.1.7
 #define _CDD_CODE
 #define _CDD_APPL_DATA
 
-#define FEE_30_SMALLSECTOR_PUBLIC_CODE
-#define FEE_30_SMALLSECTOR_PRIVATE_CODE
 #define FEE_30_SMALLSECTOR_APPL_DATA
 #define FEE_30_SMALLSECTOR_FAST_DATA
 #define FEE_30_SMALLSECTOR_PRIVATE_CONST
 #define FEE_30_SMALLSECTOR_PUBLIC_CONST
 #define FEE_30_SMALLSECTOR_NVM_CODE
-#define FEE_30_SMALLSECTOR_CODE FEE_30_SMALLSECTOR_PUBLIC_CODE
 
-#define MEMIF_CODE
 #define MEMIF_PRIVATE_CODE
 #define MEMIF_CONST
 #define MEMIF_APPL_DATA
@@ -68,12 +63,9 @@ Version  : 2015.1.7
 #define NVM_CONFIG_DATA
 #define NVM_CONFIG_CONST
 #define NVM_FAST_DATA
-#define NVM_PRIVATE_CODE
 #define NVM_PRIVATE_CONST
 #define NVM_PRIVATE_DATA
-#define NVM_PUBLIC_CODE
 #define NVM_PUBLIC_CONST
-#define NVM_CODE NVM_PUBLIC_CODE
 
 #define VSTDLIB_CODE
 #define VSTDLIB_VAR_FAR
@@ -97,9 +89,6 @@ Version  : 2015.1.7
 #endif
 #ifndef OS_OS_CBK_ALARM_CB_ALARMONESECOND_CODE
 #define OS_OS_CBK_ALARM_CB_ALARMONESECOND_CODE
-#endif
-#ifndef OS_OS_CBK_ALARM_CB_ALARM200MS_CODE
-#define OS_OS_CBK_ALARM_CB_ALARM200MS_CODE
 #endif
 #ifndef OS_OS_CBK_ALARM_CB_ALARM50MS_CODE
 #define OS_OS_CBK_ALARM_CB_ALARM50MS_CODE

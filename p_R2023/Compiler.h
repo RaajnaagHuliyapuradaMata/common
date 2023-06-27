@@ -18,7 +18,6 @@
 /* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
-/* git@bitbucket.org:raajnaag-huliyapurada-mata/<module_name>.git             */
 /* git@github.com:RaajnaagHuliyapuradaMata/<module_name>.git                  */
 /*                                                                            */
 /******************************************************************************/
@@ -51,7 +50,7 @@
 
 #define INLINE                                                          __inline
 #define LOCAL_INLINE                                               static inline
-#define FUNC(rettype, memclass)                                          rettype
+#define FUNC(rettype, memclass)       __attribute__((section(memclass))) rettype
 #define FUNC_P2CONST(rettype, ptrclass, memclass)                 const rettype*
 #define FUNC_P2VAR(rettype, ptrclass, memclass)                         rettype*
 #define P2VAR(ptrtype, memclass, ptrclass)                              ptrtype*
