@@ -1,5 +1,4 @@
-#ifndef _TEMPLATE_H
-#define _TEMPLATE_H
+#pragma once
 /******************************************************************************/
 /* File   : Template.h                                                        */
 /*                                                                            */
@@ -18,7 +17,7 @@
 /* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
-/* git@github.com:RaajnaagHuliyapuradaMata/<module_name>.git                  */
+/* https://github.com/RaajnaagHuliyapuradaMata?tab=repositories               */
 /*                                                                            */
 /******************************************************************************/
 
@@ -57,4 +56,3 @@
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-#endif
