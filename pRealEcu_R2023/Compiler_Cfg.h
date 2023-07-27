@@ -81,7 +81,7 @@ Version  : 2015.1.7
 #define FBLBMHDR_CONST
 #define FBLBMHDR_CODE
 
-#include <Os_Compiler_Cfg.h>
+#include <CompilerCfg_SwcServiceOs.h> //TBD: Move to Os specific headers
 #ifndef OS_STARTUPHOOK_HUFTPMS_CODE
 #define OS_STARTUPHOOK_HUFTPMS_CODE
 #endif
