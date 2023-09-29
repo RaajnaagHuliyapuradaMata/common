@@ -1,7 +1,6 @@
-#ifndef STD_TYPES_H
-#define STD_TYPES_H
+#pragma once
 /******************************************************************************/
-/* File   : Std_Types.h                                                       */
+/* File   : Std_Types.hpp                                                     */
 /*                                                                            */
 /* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */
@@ -108,4 +107,3 @@ typedef uint8 ComM_InhibitionStatusType;
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-#endif

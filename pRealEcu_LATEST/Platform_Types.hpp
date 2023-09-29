@@ -1,7 +1,6 @@
-#ifndef PLATFORM_TYPES_H
-#define PLATFORM_TYPES_H
+#pragma once
 /******************************************************************************/
-/* File   : Platform_Types.h                                                  */
+/* File   : Platform_Types.hpp                                                */
 /*                                                                            */
 /* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */
@@ -121,5 +120,4 @@ typedef double                                                          float64;
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-#endif
 
