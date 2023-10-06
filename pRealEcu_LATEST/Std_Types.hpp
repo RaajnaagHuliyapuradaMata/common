@@ -69,11 +69,7 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-#ifndef STATUSTYPEDEFINED
-#define STATUSTYPEDEFINED
 typedef uint8 StatusType;
-#endif
-
 typedef uint8 Std_ReturnType;
 
 typedef struct{
@@ -83,10 +79,6 @@ typedef struct{
    uint8  sw_minor_version;
    uint8  sw_patch_version;
 }Std_VersionInfoType;
-
-typedef uint8 ComM_UserHandleType; //TBD: Move to ComM_Types.h or ComStack_Types.h
-typedef uint8 ComM_ModeType;
-typedef uint8 ComM_InhibitionStatusType;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
