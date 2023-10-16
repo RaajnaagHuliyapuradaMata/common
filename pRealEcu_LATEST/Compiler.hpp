@@ -1,6 +1,6 @@
 #pragma once
 /******************************************************************************/
-/* File   : Compiler.hpp                                                      */
+/* File   : Compiler.h                                                        */
 /*                                                                            */
 /* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */

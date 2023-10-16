@@ -1,6 +1,7 @@
-#pragma once
+#ifndef PLATFORM_TYPES_H
+#define PLATFORM_TYPES_H
 /******************************************************************************/
-/* File   : Platform_Types.hpp                                                */
+/* File   : Platform_Types.h                                                  */
 /*                                                                            */
 /* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */
@@ -37,8 +38,6 @@ Derivative      : R7F7010133AFP
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define TRUE                                                                  1u
-#define FALSE                                                                 0u
 #define COMMONASR_RH850_IMPL_PLATFORMTYPES_VERSION                        0x0001
 #define COMMONASR_RH850_IMPL_PLATFORMTYPES_RELEASE_VERSION                  0x01
 #define PLATFORM_VENDOR_ID                                                    1u
@@ -56,6 +55,14 @@ Derivative      : R7F7010133AFP
 #define LSB_FIRST                                                             1u
 #define HIGH_BYTE_FIRST                                                       0u
 #define LOW_BYTE_FIRST                                                        1u
+
+#ifndef TRUE
+#define TRUE                                                                  1u
+#endif
+
+#ifndef FALSE
+#define FALSE                                                                 0u
+#endif
 
 #define CPU_TYPE                                                     CPU_TYPE_32
 #define CPU_BIT_ORDER                                                  LSB_FIRST
@@ -114,4 +121,5 @@ typedef double                                                          float64;
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
+#endif
 
