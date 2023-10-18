@@ -1,7 +1,6 @@
-#ifndef STD_TYPES_H
-#define STD_TYPES_H
+#pragma once
 /******************************************************************************/
-/* File   : Std_Types.h                                                       */
+/* File   : Std_Types.hpp                                                     */
 /*                                                                            */
 /* Author : Raajnaag HULIYAPURADA MATA                                        */
 /*                                                                            */
@@ -23,16 +22,8 @@
 /******************************************************************************/
 
 /******************************************************************************/
-/* #INCLUDES                                                                  */
-/******************************************************************************/
-#include "Platform_Types.hpp"
-#include "Compiler.hpp"
-
-/******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-//#define ReSim
-
 #define STD_TYPES_VENDOR_ID                                                 (1u)
 #define STD_TYPES_MODULE_ID                                               (197u)
 #define COMMONASR__COMMON_IMPL_STDTYPES_VERSION                           0x0001
@@ -59,9 +50,16 @@
 #define STD_IDLE                                                              0u
 #define STD_ON                                                                1u
 #define STD_OFF                                                               0u
-#define E_OK                                                                  0u
-#define E_NOT_OK                                                              1u
+#define E_OK                                                    ((StatusType)0U)
+#define E_NOT_OK                                                ((StatusType)1U)
 #define E_PENDING                                                             2u
+
+/******************************************************************************/
+/* #INCLUDES                                                                  */
+/******************************************************************************/
+#include "CfgProject.hpp"
+#include "Platform_Types.hpp"
+#include "Compiler.hpp"
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -70,11 +68,7 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-#ifndef STATUSTYPEDEFINED
-#define STATUSTYPEDEFINED
 typedef uint8 StatusType;
-#endif
-
 typedef uint8 Std_ReturnType;
 
 typedef struct{
@@ -108,4 +102,3 @@ typedef uint8 ComM_InhibitionStatusType;
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
-#endif
