@@ -37,8 +37,8 @@ Derivative      : R7F7010133AFP
 /******************************************************************************/
 /* #DEFINES                                                                   */
 /******************************************************************************/
-#define TRUE                                                                  1u
 #define FALSE                                                                 0u
+#define TRUE                                                                  1u
 #define COMMONASR_RH850_IMPL_PLATFORMTYPES_VERSION                        0x0001
 #define COMMONASR_RH850_IMPL_PLATFORMTYPES_RELEASE_VERSION                  0x01
 #define PLATFORM_VENDOR_ID                                                    1u
