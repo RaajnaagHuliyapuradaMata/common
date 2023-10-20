@@ -50,9 +50,9 @@
 #define STD_IDLE                                                              0u
 #define STD_ON                                                                1u
 #define STD_OFF                                                               0u
-#define E_OK                                                                  0u
-#define E_NOT_OK                                                              1u
-#define E_PENDING                                                             2u
+#define E_OK                                         ((Type_Std_tValueReturn)0u)
+#define E_NOT_OK                                     ((Type_Std_tValueReturn)1u)
+#define E_PENDING                                    ((Type_Std_tValueReturn)2u)
 
 /******************************************************************************/
 /* #INCLUDES                                                                  */
