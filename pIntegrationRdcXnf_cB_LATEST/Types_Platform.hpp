@@ -14,7 +14,7 @@
 /* certain responsibilities, if you distribute copies of the software, or if  */
 /* you modify it: responsibilities to respect the freedom of others.          */
 /*                                                                            */
-/* All rights reserved. Copyright © 1982 Raajnaag HULIYAPURADA MATA           */
+/* All rights reserved. Copyright ï¿½ 1982 Raajnaag HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
 /* git@github.com:RaajnaagHuliyapuradaMata/<module_name>.git                  */
@@ -79,19 +79,12 @@ typedef signed int                                                 sint16_least;
 typedef unsigned int                                               uint16_least;
 typedef signed int                                                 sint32_least;
 typedef unsigned int                                               uint32_least;
+typedef float                                                           float32;
+typedef double                                                          float64;
 
-#if defined(__ghs__) && !defined(__LLONG_BIT)
-#else
 #define PLATFORM_SUPPORT_SINT64_UINT64
 typedef   signed long long                                               sint64;
 typedef unsigned long long                                               uint64;
-#endif
-
-#if defined(__ghs__) && defined(__NoFloat__)
-#else
-typedef float                                                           float32;
-typedef double                                                          float64;
-#endif
 
 /******************************************************************************/
 /* CONSTS                                                                     */
