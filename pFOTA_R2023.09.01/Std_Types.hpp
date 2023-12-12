@@ -4,7 +4,7 @@
 #include "Platform_Types.hpp"
 #include "Compiler.hpp"
 
-#define STD_TYPES_VENDOR_ID               (30u)
+#define STD_TYPES_VENDOR_ID               (1u)
 #define STD_TYPES_MODULE_ID               (197u)
 #define STD_VENDOR_ID                     STD_TYPES_VENDOR_ID
 #define STD_MODULE_ID                     STD_TYPES_MODULE_ID
