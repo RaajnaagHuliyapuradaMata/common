@@ -1,8 +1,8 @@
 #pragma once
 /******************************************************************************/
-/* File   : Std_Types.hpp                                                     */
+/* File   : Compiler.hpp                                                      */
 /*                                                                            */
-/* Author : Raajnaag HULIYAPURADA MATA                                        */
+/* Author : Nagaraja HULIYAPURADA MATA                                        */
 /*                                                                            */
 /* License / Warranty / Terms and Conditions                                  */
 /*                                                                            */
@@ -14,7 +14,7 @@
 /* certain responsibilities, if you distribute copies of the software, or if  */
 /* you modify it: responsibilities to respect the freedom of others.          */
 /*                                                                            */
-/* All rights reserved. Copyright ï¿½ 1982 Raajnaag HULIYAPURADA MATA           */
+/* All rights reserved. Copyright © 1982 Nagaraja HULIYAPURADA MATA           */
 /*                                                                            */
 /* Always refer latest software version from:                                 */
 /* git@github.com:RaajnaagHuliyapuradaMata/<module_name>.git                  */
@@ -22,44 +22,44 @@
 /******************************************************************************/
 
 /******************************************************************************/
-/* #DEFINES                                                                   */
-/******************************************************************************/
-#define STD_TYPES_VENDOR_ID                                                 (1u)
-#define STD_TYPES_MODULE_ID                                               (197u)
-#define COMMONASR__COMMON_IMPL_STDTYPES_VERSION                           0x0001
-#define COMMONASR__COMMON_IMPL_STDTYPES_RELEASE_VERSION                     0x01
-#define STD_TYPES_AR_RELEASE_MAJOR_VERSION                                  (4u)
-#define STD_TYPES_AR_RELEASE_MINOR_VERSION                                  (2u)
-#define STD_TYPES_AR_RELEASE_REVISION_VERSION                               (2u)
-#define STD_TYPES_SW_MAJOR_VERSION                                          (1u)
-#define STD_TYPES_SW_MINOR_VERSION                                          (0u)
-#define STD_TYPES_SW_PATCH_VERSION                                          (0u)
-
-#define STD_VENDOR_ID                                        STD_TYPES_VENDOR_ID
-#define STD_MODULE_ID                                        STD_TYPES_MODULE_ID
-#define STD_AR_RELEASE_MAJOR_VERSION          STD_TYPES_AR_RELEASE_MAJOR_VERSION
-#define STD_AR_RELEASE_MINOR_VERSION          STD_TYPES_AR_RELEASE_MINOR_VERSION
-#define STD_AR_RELEASE_REVISION_VERSION    STD_TYPES_AR_RELEASE_REVISION_VERSION
-#define STD_SW_MAJOR_VERSION                          STD_TYPES_SW_MAJOR_VERSION
-#define STD_SW_MINOR_VERSION                          STD_TYPES_SW_MINOR_VERSION
-#define STD_SW_PATCH_VERSION                          STD_TYPES_SW_PATCH_VERSION
-
-#define STD_HIGH                                                              1u
-#define STD_LOW                                                               0u
-#define STD_ACTIVE                                                            1u
-#define STD_IDLE                                                              0u
-#define STD_ON                                                                1u
-#define STD_OFF                                                               0u
-#define E_OK                                                    ((StatusType)0U)
-#define E_NOT_OK                                                ((StatusType)1U)
-#define E_PENDING                                                             2u
-
-/******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
-#include "CfgProject.hpp"
-#include "Platform_Types.hpp"
-#include "Compiler.hpp"
+#include "Compiler_Cfg.hpp"
+
+/******************************************************************************/
+/* #DEFINES                                                                   */
+/******************************************************************************/
+#define COMMONASR_RH850_IMPL_COMPABSTRACT_VERSION                         0x0001
+#define COMMONASR_RH850_IMPL_COMPABSTRACT_RELEASE_VERSION                   0x01
+#define COMPILER_VENDOR_ID                                                    1u
+#define COMPILER_MODULE_ID                                                  198u
+#define COMPILER_AR_RELEASE_MAJOR_VERSION                                   (4u)
+#define COMPILER_AR_RELEASE_MINOR_VERSION                                   (2u)
+#define COMPILER_AR_RELEASE_REVISION_VERSION                                (2u)
+#define COMPILER_SW_MAJOR_VERSION                                           (1u)
+#define COMPILER_SW_MINOR_VERSION                                           (0u)
+#define COMPILER_SW_PATCH_VERSION                                           (0u)
+#define _GREENHILLS_C_RH850_
+#define AUTOMATIC
+#define TYPEDEF
+
+#ifndef NULL_PTR
+#define NULL_PTR                                                     ((void *)0)
+#endif
+
+#define INLINE                                                          __inline
+#define LOCAL_INLINE                                               static inline
+#define FUNC(rettype, memclass) rettype
+#define FUNC_P2CONST(rettype, ptrclass, memclass)                 const rettype*
+#define FUNC_P2VAR(rettype, ptrclass, memclass)                         rettype*
+#define P2VAR(ptrtype, memclass, ptrclass)                              ptrtype*
+#define P2CONST(ptrtype, memclass, ptrclass)                      const ptrtype*
+#define CONSTP2VAR(ptrtype, memclass, ptrclass)                   ptrtype *const
+#define CONSTP2CONST(ptrtype, memclass, ptrclass)           const ptrtype *const
+#define P2FUNC(rettype, ptrclass, fctname)                    rettype (*fctname)
+#define CONSTP2FUNC(rettype, ptrclass, fctname)         rettype (*const fctname)
+#define CONST(type, memclass)                                         const type
+#define VAR(vartype, memclass)                                           vartype
 
 /******************************************************************************/
 /* MACROS                                                                     */
@@ -68,20 +68,6 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef uint8 StatusType;
-typedef uint8 Std_ReturnType;
-
-typedef struct{
-   uint16 vendorID;
-   uint16 moduleID;
-   uint8  sw_major_version;
-   uint8  sw_minor_version;
-   uint8  sw_patch_version;
-}Std_VersionInfoType;
-
-typedef uint8 ComM_UserHandleType; //TBD: Move to ComM_Types.h or ComStack_Types.h
-typedef uint8 ComM_ModeType;
-typedef uint8 ComM_InhibitionStatusType;
 
 /******************************************************************************/
 /* CONSTS                                                                     */
@@ -102,3 +88,4 @@ typedef uint8 ComM_InhibitionStatusType;
 /******************************************************************************/
 /* EOF                                                                        */
 /******************************************************************************/
+
